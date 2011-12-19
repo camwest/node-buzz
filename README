@@ -2,3 +2,20 @@ Node buzz (also known as fizz buzz, or simply buzz) is a group word game
 frequently encountered as a drinking game. Players take turns to count 
 incrementally, replacing any number divisible by three with the word "node", 
 and any number divisible by five with the word "buzz".
+
+Example:
+1
+2
+node
+4
+buzz
+node
+7
+8
+node
+buzz
+11
+node
+13
+14
+nodebuzz

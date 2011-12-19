@@ -3,6 +3,6 @@ Buzz = require('../lib/buzz').Buzz
 
 module.exports = testCase
   "Something goes here": (test) ->
-    sut = 
+    sut = new Buzz
     test.ok false
     test.done()
