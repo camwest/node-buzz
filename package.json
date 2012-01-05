@@ -2,11 +2,9 @@
   "name": "node-buzz",
   "version": "0.0.1",
   "dependencies": {
-    "coffee-script": "1.1.2"
-  },
-
-  "devDependencies": {
-    "nodeunit": "0.5.4"
+    "coffee-script": "1.1.2",
+    "express": "2.2.0",
+    "jade": "*"
   }
 }
 
