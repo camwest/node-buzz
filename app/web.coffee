@@ -1,11 +1,15 @@
+express = require('express')
 
 
-
-app = require('express').createServer()
+app = express.createServer express.logger()
 app.set 'view engine', 'jade'
+
+app.configure ->
+  app.use express.static "#{__dirname}/../public"
 
 app.get '/', (req, res) ->
   res.render 'index'
+  
 
 port = process.env.PORT || 3000
 
