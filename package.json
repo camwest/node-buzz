@@ -4,7 +4,8 @@
   "dependencies": {
     "coffee-script": "1.1.2",
     "express": "2.2.0",
-    "jade": "*"
+    "jade": "*",
+    "tobi": "*gst"
   }
 }
 

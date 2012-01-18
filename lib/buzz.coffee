@@ -10,6 +10,7 @@ class Buzz
     return 'nodebuzz' if @nodebuzzable?(number)
     return 'node' if @nodeable?(number)
     return 'buzz' if @buzzable?(number)
+    return number
 
   nodeable: (number) ->
     number % 3 == 0

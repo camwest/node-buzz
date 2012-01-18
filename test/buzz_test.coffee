@@ -24,6 +24,11 @@ module.exports = testCase
     test.equal "nodebuzz", sut.check(30)
     test.done()
 
+  "When we input 4, 4 is returned": (test) ->
+    sut = new Buzz
+    test.equal 4, sut.check(4)
+    test.done()
+
   # MODEL COLLECTION
   "When a zero is passed in the array should be empty": (test) ->
     sut = new Buzz
@@ -36,6 +41,7 @@ module.exports = testCase
   "When we run multiple items, they are run through the checker": (test) ->
     sut = new Buzz
     values = sut.start(15)
+    test.equal 2, values[1]
     test.equal "node", values[2]
     test.equal "buzz", values[4]
     test.equal "nodebuzz", values[14]
